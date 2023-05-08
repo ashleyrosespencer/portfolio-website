@@ -119,10 +119,15 @@ let swiperProjects = new Swiper(".projects__container", {
 });
 
 /*=============== EMAIL JS ===============*/
+
 (function () {
   // https://dashboard.emailjs.com/admin/account
   emailjs.init('uRtidt2Mu5XRhtoyy');
 })();
+
+const contactName = document.getElementById("contact-name"),
+      contactEmail = document.getElementById("contact-email"),
+      contactMessage = document.getElementById("contact-message")
 
 // listen to the form submission
 document
@@ -145,7 +150,13 @@ document
         messageText.classList.add('color-red')
         messageText.textContent = 'Message failed! Please try again.'
       }
+      
     );
+
+    contactName.value = '';
+    contactEmail.value = '';
+    contactMessage.value = '';
+
   });
 
 /*=============== SHOW SCROLL UP ===============*/
