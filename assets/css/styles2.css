@@ -1,0 +1,241 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* BASIC STYLES */
+html {
+    font-size: 100%;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    max-width: 1400px;
+    font-family: 'Poppins', sans-serif;
+    font-size: .938rem;
+    background-color: hsla(240, 20%, 99%, 0.897);
+    color: hsl(207, 4%, 28%);
+}
+
+h1,
+h2,
+h3 {
+  color: hsl(207, 4%, 16%);
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: .938rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.084);
+  }
+  
+  .nav-links a {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .2px;
+    font-weight: 400;
+  }
+  
+  /* LOGO */
+  .logo {
+    margin-inline-start: 9px;
+    text-decoration: none;
+  }
+
+  .logo h1 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+  }
+
+  /* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 15px;
+    color: #000;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+
+  .navbar a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: #000;
+  }
+  
+  .navbar a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar a:hover::before {
+    transform: scaleX(1);
+  }
+  
+  /*RESPONSIVE NAVBAR MENU STARTS*/
+  
+  /* CHECKBOX HACK */
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  /*HAMBURGER MENU*/
+  
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        color: #000;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+      }
+    
+      .menu li:hover {
+        display: inline-block;
+        background-color: #e1e1e1;
+        transition: 0.3s ease;
+      }
+    
+      .menu li+li {
+        margin-top: 12px;
+      }
+    
+    
+      input[type=checkbox]:checked~.menu {
+        display: block;
+      }
+    
+      .hamburger {
+        display: block;
+      }
+}
+
+/*=============== SKILLS ===============*/
+.skills__container {
+    row-gap: 3.5rem;
+  }
+  
+  .skills__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 2.5rem;
+  }
+  
+  .skills__title i {
+    font-size: 1rem;
+    font-weight: initial;
+  }
+  
+  .skills__info,
+  .skills__data,
+  .skills__blob {
+    display: grid;
+  }
+  
+  .skills__info {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem 2rem;
+  }
+  
+  .skills__data {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .skills__blob {
+    width: 80px;
+    height: 100px;
+    background-color: var(--container-color);
+    border-radius: 3rem;
+    place-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .skills__blob img {
+    width: 40px;
+  }
+  
+  .skills__name {
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+  }
+  
+  .skills__subtitle {
+    font-size: var(--tiny-font-size);
+    color: var(--text-color-light);
+  }
+  
+  /* Animation skills */
+  .skills__blob:hover img {
+    animation: bounce-skills .6s;
+  }
+  
+  @keyframes bounce-skills {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(-6px);
+    }
+    40% {
+      transform: translate(0);
+    }
+    60% {
+      transform: translateY(-3px);
+    }
+    80% {
+      transform: translate(0);
+    }
+  }
+  
