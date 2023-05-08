@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -66,7 +66,7 @@
 
                 <!-- Toggle button -->
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-4-line"></i>
+                    <i class="ri-menu-line"></i>
                 </div>
             </div>
         </nav>
@@ -78,11 +78,11 @@
             <div class="home__container container grid section__border">
                 <div class="home__data grid">
                     <h1 class="home__title">
-                        Hi, I'm Ashley, <br>
+                        Hi, I'm Ashley, a
                         <div class='console-container'><span id='text'></span>
                             <div class='console-underscore' id='console'>&#95;</div>
                         </div>
-                        Based in Portland, Oregon. <br>
+                        Based in Portland, Oregon.
                     </h1>
 
                     <div class="home__blob grid">
@@ -95,13 +95,14 @@
                     </div>
 
                     <ul class="home__social">
-                        <a href="https://www.linkedin.com/in/ashley-shubin-127b46253/" target="_blank" class="home__social-link">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
+                        <li><a href="https://www.linkedin.com/in/ashley-shubin-127b46253/" target="_blank"
+                                class="home__social-link">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a></li>
 
-                        <a href="https://www.github.com/ashleyshubin" target="_blank" class="home__social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
+                        <li><a href="https://www.github.com/ashleyshubin" target="_blank" class="home__social-link">
+                                <i class="ri-github-line"></i>
+                            </a></li>
                     </ul>
                 </div>
 
@@ -113,15 +114,15 @@
                         </h3>
 
                         <p class="home__info-description">
-                            I am a frontend developer with a passion for creating user-friendly
+                            I have a passion for creating user-friendly
                             and visually appealing websites. After deciding it was time for a
                             (much needed) career change in 2020, I began my journey into programming
                             and front end development. Through a combination of formal education and
-                            self-study, I've developed an expertise in HTML, CSS, JavaScript, and 
-                            various frontend frameworks. 
+                            self-study, I've developed an expertise in HTML, CSS, JavaScript, and
+                            various frontend frameworks.
                             <br>
                             <br>
-                            I am always learning and looking for new ways to improve my skills 
+                            I am always learning and looking for new ways to improve my skills
                             and stay on top of the latest trends.
                         </p>
                     </div>
@@ -134,16 +135,15 @@
                             PERSONAL
                         </h3>
 
-                        <p class="home__info-description"> 
-                            Outside of work, I enjoy cooking new recipies, playing video games,
-                            riding motorcycles, and hanging out with my two cats.
+                        <p class="home__info-description">
+                            In my free time, I enjoy cooking new recipes, playing video games,
+                            riding motorcycles with my boyfriend, and hanging out with my two cats.
                             <br>
                             <br>
                             Nice to meet you!
                         </p>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
 
@@ -257,7 +257,8 @@
                             <span class="skills__subtitle"></span>
                         </div>
                     </div>
-
+                </div>
+            </div>
         </section>
         <!--==================== EDUCATION ====================-->
         <section class="education section" id="education">
@@ -298,13 +299,14 @@
                     </div>
                 </div>
                 <img src="assets/img/shape-circle.svg" alt="decorative background image" class="education__img">
+            </div>
         </section>
 
         <!--==================== PROJECTS ====================-->
         <section class="projects section" id="projects">
 
             <h2 class="section__title">Projects</h2>
-            <span class="section__subtitle">Most recent work</span>
+            <span class="section__subtitle"></span>
 
             <div class="container section__border">
                 <div class="projects__container swiper">
@@ -320,7 +322,6 @@
                                 <a href="https://www.bigtonyproductions.com" class="projects__button">
                                     Visit website <i class="ri-arrow-right-line"></i>
                                 </a>
-                                </span>
                             </div>
                         </div>
 
@@ -335,7 +336,6 @@
                                 <a href="#" class="projects__button">
                                     Visit website <i class="ri-arrow-right-line"></i>
                                 </a>
-                                </span>
                             </div>
                         </div>
                         <!--==================== PROJECT 3 ====================-->
@@ -349,7 +349,6 @@
                                 <a href="#" class="projects__button">
                                     View demo <i class="ri-arrow-right-line"></i>
                                 </a>
-                                </span>
                             </div>
                         </div>
                     </div>
@@ -375,38 +374,31 @@
             <span class="section__subtitle">Questions? Comments? Just want to say hi?</span>
 
             <div class="contact__container container grid section__border">
-                <div class="contact__content">
-                    <h3 class="contact__title">
-                        <i class="ri-chat-3-line"></i> Talk to me
-                    </h3>
+                <form class="contact__form" id="contact-form">
+                    <div class="contact__form-div">
+                        <label class="contact__form-tag">Name</label>
+                        <input type="text" name="user_name" required placeholder="Write your name"
+                            class="contact__form-input" id="contact-name">
+                    </div>
 
-                    <form action="" class="contact__form" id="contact-form">
-                        <div class="contact__form-div">
-                            <label class="contact__form-tag">Name</label>
-                            <input type="text" name="user_name" required placeholder="Write your name"
-                                class="contact__form-input" id="contact-name">
-                        </div>
+                    <div class="contact__form-div">
+                        <label class="contact__form-tag">Email</label>
+                        <input type="email" name="user_email" required placeholder="Write your email"
+                            class="contact__form-input" id="contact-email">
+                    </div>
 
-                        <div class="contact__form-div">
-                            <label class="contact__form-tag">Email</label>
-                            <input type="email" name="user_email" required placeholder="Write your email"
-                                class="contact__form-input" id="contact-email">
-                        </div>
+                    <div class="contact__form-div contact__form-area">
+                        <label class="contact__form-tag">Message</label>
+                        <textarea name="user_message" required placeholder="Write your message here"
+                            id="contact-message" class="contact__form-input"></textarea>
+                    </div>
 
-                        <div class="contact__form-div contact__form-area">
-                            <label class="contact__form-tag">Message</label>
-                            <textarea name="user_message" required placeholder="Write your message here"
-                                id="contact-message" class="contact__form-input"></textarea>
-                        </div>
+                    <p class="messageText" id="messageText"></p>
 
-                        <p class="messageText" id="messageText"></p>
-
-                        <button type="submit" class="contact__button">
-                            Submit <i class="ri-arrow-right-up-line"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
+                    <button type="submit" class="contact__button">
+                        Submit <i class="ri-arrow-right-up-line"></i>
+                    </button>
+                </form>
             </div>
         </section>
     </main>
@@ -431,13 +423,14 @@
             </ul>
 
             <ul class="footer__social">
-                <a href="https://www.linkedin.com/in/ashley-shubin-127b46253/" target="_blank" class="footer__social-link">
-                    <i class="ri-linkedin-box-line"></i>
-                </a>
+                <li><a href="https://www.linkedin.com/in/ashley-shubin-127b46253/" target="_blank"
+                        class="footer__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a></li>
 
-                <a href="https://www.github.com/ashleyshubin" target="_blank" class="footer__social-link">
-                    <i class="ri-github-line"></i>
-                </a>
+                <li><a href="https://www.github.com/ashleyshubin" target="_blank" class="footer__social-link">
+                        <i class="ri-github-line"></i>
+                    </a></li>
 
             </ul>
         </div>
@@ -456,7 +449,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>

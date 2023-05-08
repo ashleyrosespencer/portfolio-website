@@ -47,7 +47,7 @@ sr.reveal('.education__content:nth-child(2)', { origin: 'right' })
 
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['a Frontend Developer', 'a Web Designer', 'a Cool Human'], 'text', ['pink', 'lightblue', '#b19cd9']);
+consoleText(['Frontend Developer', 'Web Designer', 'Cool Human'], 'text', ['pink', 'lightblue', '#b19cd9']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
