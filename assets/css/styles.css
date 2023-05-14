@@ -16,7 +16,7 @@
   /*========== FONTS AND TYPOGRAPHY ==========*/
   --body-font: 'Roboto', sans-serif;
   --title-font: 'Lora', serif;
-  --biggest-font-size: 1rem;
+  --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -801,6 +801,10 @@ margin-bottom: .25rem;
   .home__blob {
     padding: 5%;
     border: 0px;
+  }
+
+  .home__title, .console-container {
+    font-size: 1.25rem;
   }
 
   .skills__info {
